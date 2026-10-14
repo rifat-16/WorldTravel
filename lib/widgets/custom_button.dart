@@ -16,7 +16,7 @@ class CustomButtonWidget extends StatelessWidget {
     required this.onPressed,
     this.backgroundColor,
     this.textColor = Colors.white,
-    this.width = double.infinity, // Default to full width for auth forms
+    this.width = double.infinity,
     this.height = 50.0,
     this.borderRadius = 12.0,
     this.isLoading = false,
@@ -35,7 +35,7 @@ class CustomButtonWidget extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderRadius),
           ),
-          elevation: 0, // Flat design is common in modern auth screens
+          elevation: 0,
         ),
         child: isLoading
             ? const SizedBox(
